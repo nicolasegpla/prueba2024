@@ -1,0 +1,29 @@
+El proyecto se realizo usando react.js y vite.js
+usamos la API fetch de react para crear las solicitudes de tipo get
+la peticion se requiere autenticacion Beard 
+
+## como utilizar el componente tabla:
+el componente tabla se usa para mostrar informnacion de la api dada en el proyecto
+api = ejemplo.com
+el componente recibe como tal una sola propiedad la cual se espera se un objeto ya que esta data esta siendo usada por un .map de javaScript 
+El componente usa 4 datos importantes 
+- id
+- numero-radicacion
+- fecha
+- nombre_solicitante
+
+Estos datos estan siendo validados, dado que si un dato es null evitaremos que este dato no es amigable con el usuario a si que cambiaremos es datos por invalid
+
+como instalar nuestro componente en cualquier parte de nuestra aplicacion 
+
+para eso nos vamos a situar en la pagina en la cual queremos mostrar nuestra tabla y haremos el siguiente import 
+
+import Tabla from '../../Components/Tabla'
+
+y enviaremos la data por medio de una prop que como se pide, ncesitamos que sea un objeto.
+
+<Tabla data={data} />
+
+
+
+

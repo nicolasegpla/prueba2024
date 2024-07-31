@@ -1,0 +1,34 @@
+.tabla-div {
+    margin: 24px 0;
+
+}
+.validator {
+    background-color: red;
+}
+.titulo-tabla-tr {
+    width: 7.5rem;
+} 
+.titulo-tabla  {
+    background-color: #030303;
+    color: white;
+    padding: .75rem 0;
+}
+tr {
+    background-color: wheat;
+    width: auto;
+    height: auto;
+}
+th {
+    width: 15.625rem;
+    padding: .5rem;
+    padding-left: .75rem;
+    background-color: white;
+    border-bottom: 1px solid #030303;
+    text-align: start;
+    font-weight: 400;
+
+}
+.id {
+    width: 6.25rem;
+    text-align: center;
+}

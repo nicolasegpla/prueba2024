@@ -1,0 +1,49 @@
+$breakpoints: (
+  sm: 700px,
+);
+@mixin media-up($breakpoint) {
+    @media screen and (min-width: map-get(
+        $breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+
+nav {
+    width: 100%;
+    height: 4.25rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    @include media-up(sm) {
+        flex-direction: row;
+    }
+}
+.div-logo {
+    
+    font-weight: 600;
+    font-size: 1.5rem;
+    @include media-up(sm) {
+        padding-left: 1rem;
+    }
+}
+
+.div-ul {
+    
+    @include media-up(sm) {
+        padding-right: 2rem;
+    }
+}
+
+ul {
+    display: flex;
+    gap: .75rem;
+    list-style: none;
+}
+
+
